@@ -1,0 +1,202 @@
+.page-title {
+    font-size: 20px;
+}
+.inner-form-wrapper{
+    max-width: 820px;
+    width: 100%;
+    margin: auto;
+}
+.details-wrapper{
+    label{
+        display: block
+    }
+    .detail-field{
+        font-size: 12px;
+        color: $primary-dark;
+    }
+    .detail-value{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .sub-heading-text{
+        color: #000;
+    }
+}
+.va-middle{
+    vertical-align: middle !important;
+}
+.jconfirm .jconfirm-box .jconfirm-buttons button {
+    border: 1px solid $primary-color;
+}
+.jconfirm.jconfirm-white .jconfirm-box .jconfirm-buttons button,
+.jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons button {
+    text-transform: initial;
+}
+.naming-group{
+    .d-table-cell{
+        &:first-child{
+            vertical-align: middle;
+            width: 20%;
+            .dropdown-toggle{
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+        &:nth-child(2) .form-control{
+            border-radius: 0;
+            border-left: 0;
+            border-right: 0;
+        }
+        &:last-child .form-control{
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background-color: rgba($white, 0.4);
+}
+//text editor
+.jodit-status-bar{
+    display: none;
+}
+
+.two-sibling-input{
+    .form-group{
+        &:first-child{
+            .form-control,.dropdown-toggle{
+                border-right: 0;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+        &:last-child{
+            .form-control,.dropdown-toggle{
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
+    }
+}
+.input-group-text{
+    font-size: 12px;
+}
+.small-inputs{
+    width: 34px;
+    display: inline-block;
+    padding: 0 5px !important;
+    text-align: center;
+    height: 23px !important;
+    box-shadow: none;
+}
+.datepicker-wrap {
+    position: relative;
+    .togglePassword     
+    {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+    //   padding: 7px 8px;
+      transform: translateY(-50%);
+      text-decoration: none;
+      z-index: 3;
+      
+      i {
+        font-size: 20px;
+        color: #414d55;
+        transition: 0.2s all linear;
+      }
+      &:hover {
+        text-decoration: none;
+        i {
+          color: $primary-color;
+          text-decoration: none;
+
+        }
+      }
+   
+
+    }
+    .dateCalender{
+        position: absolute;
+      right: 15px;
+      top: 50%;
+    //   padding: 7px 8px;
+      transform: translateY(-50%);
+      text-decoration: none;
+      z-index: 3;
+      cursor: pointer;
+      i {
+        font-size: 20px;
+        color: #414d55;
+        transition: 0.2s all linear;
+      }
+      &:hover {
+        text-decoration: none;
+        i {
+          color: $primary-color;
+          text-decoration: none;
+        }
+      }
+    }
+}
+  
+.validationAlert {
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 0.25rem;
+    color: #cb1334;
+    display: none;
+}
+
+.course-dropdown {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    .btn-light{
+        &:first-child{
+            border-right: 0;
+            // border-radius: 10px 0 0 10px;
+            border-radius: 0;
+        }
+    }
+    .d-table-cell{
+        &:first-child{
+            vertical-align: middle;
+            .dropdown-toggle{
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                border-right:0;
+            }
+        }
+        &:nth-child(2) .btn-light{
+            border-radius: 0;
+            border-left: 0;
+            border-right: 0;
+        }
+        &:last-child .btn-light{
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}
+.mt--8{
+    margin-top: -8px;
+}
+
+
+
+
+.availMark {
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ffc107;
+}
+.unavailMark {
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #6c757d;
+}

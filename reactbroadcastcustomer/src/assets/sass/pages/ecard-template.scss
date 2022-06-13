@@ -1,0 +1,85 @@
+.app-layout.cost-layout{
+    td{
+    .bg-inverse-success,.bg-inverse-danger,.bg-inverse-warning {
+        font-size: 100%;
+        font-weight: 700;
+    }
+    .badge{
+        padding: 1px 0px 1px 0px;
+        min-width: 60px;
+    }
+  }
+}
+.page-ecard{
+    .img-wrapper{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    .imageThumb {
+        height: 100px;
+        width: 99px;
+        padding: 10px 0;
+        cursor: pointer;
+        object-fit: contain;
+    }
+    .pip {
+        display: inline-block;
+        margin: 0 10px 10px 0;
+        position: relative;
+        border: 1px dashed $primary-color;
+        .remove {
+            display: block;
+            color: $danger;
+            text-align: center;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 12px;
+            padding: 3px;
+            &:hover {
+                color: $black;
+            }
+            
+        }
+    }
+}
+.edit-employee-cost{
+    .has-remove-icon{
+        position: relative;
+        padding-right: 25px;
+        .col-md-6{
+            width: calc(50% - 15px);
+        }
+        .repeater-action{
+            width: 30px;
+            padding-left: 20px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 13px;
+            i{
+                color: $danger;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    .text-add-repeater{
+        font-size: 13px;
+        margin-top: -5px;
+    }
+    .input-group-prepend{
+        box-shadow: $input-shadow;
+    }
+}
+thead th{
+    background-color: #fff ;
+}

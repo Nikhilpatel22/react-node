@@ -1,0 +1,65 @@
+//color
+$primary-color: #0088CB;
+$primary-dark: #1A3D6B;
+$secondary-color: #34444c;
+// $white: rgb(163, 32, 32);
+$white:#fff;
+$black: #000;
+$primary-text: #222222;
+$gray: #424d57;
+$gray2: #dddddd;
+$danger: #d9534f;
+$lightergrey: #d9d9d9;
+$lightpurple: #8e9aea;
+$success: #48b713;
+$warning: #e6a314;
+$orange: #f05920;
+$dark-blue: #414d55;
+$border-primary: $primary-color;
+$d-gray: #b7c0cd;
+$btn-primary : #ff9b44;
+$btn-primary-hover: #ff851a;
+
+// font-weight
+$n: normal;
+$fw-l: 300;
+$fw-m: 400;
+$fw-sb: 600;
+$fw-mb:700;
+$fw-b: bold;
+// App Header
+$header-height: 65px;
+$header-background: $white;
+
+// App Sidebar Navigation
+$sidebar-menu-width: 60px;
+$sidebar-full-width: 270px;
+
+//form
+$border-light:  rgba(88,89,91,0.2);
+$form-border: rgb(192, 204, 218);
+$shadow: 0px 4px 15px rgba(0,0,0,0.1);
+$input-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+$button-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+$button-sm-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+$button-hover: #0074ad;
+
+//insight icons variable start
+$icomoon-font-family: "insight" !default;
+
+$icomoon-font-path: "/webfonts/insight-fonts" !default;
+
+$insight-broadcast: "\e90c";
+$insight-cost-tracker: "\e900";
+$insight-reminder: "\e901";
+$insight-vendor: "\e902";
+$insight-calendar: "\e903";
+$insight-chain: "\e904";
+$insight-contact: "\e905";
+$insight-chat: "\e906";
+$insight-dashboard: "\e907";
+$insight-enterprise: "\e908";
+$insight-management: "\e909";
+$insight-change-password1: "\e90a";
+$insight-bookmark: "\e90b";
+//insight icons variable start

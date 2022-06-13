@@ -1,0 +1,13 @@
+.has-label-on-border .form-group .custom-file label.custom-file-label{
+    top: 0;
+    height: 40px;
+    padding-left: 12px;
+    border-radius: 0.25rem;
+    padding-top: 10px;
+    width: 100%;
+    left: 0;
+    &::after{
+        height: 40px;
+        padding-top: 10px;
+    }
+}

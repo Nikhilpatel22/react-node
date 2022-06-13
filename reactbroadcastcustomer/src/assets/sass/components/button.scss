@@ -1,0 +1,136 @@
+/** @format */
+.btn {
+  padding: 6px 12px;
+  &.btn-sm {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  &:active,
+  &:focus,
+  &:active:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.btn {
+  border-radius: 0;
+  font-family: Montserrat, Arial;
+  font-size: 14px;
+  &.btn-rounded {
+    border-radius: 50px;
+  }
+  &.auth-orange-btn {
+    background-color:$orange;
+    border-color:$orange;
+    color: $white;
+  }
+  //New Variables for buttons
+  &.btn-primary {
+    background-color: $primary-dark;
+    border-color: $primary-dark;
+    color: $white;
+    transition: 0.2s all linear;
+    min-width: 90px;
+    height: 40px;
+    border-radius: 15px;
+    box-shadow: $button-sm-shadow;
+    &.btn-sm{
+      min-width: 50px;
+      padding: 8px 12px;
+      box-shadow: $button-sm-shadow;
+    }
+    &:hover{
+      background-color: $button-hover;
+      border-color: $button-hover;
+      outline: none;
+    }
+    &:active, &:focus{
+      background-color: #153773;
+      box-shadow: none;
+      box-shadow: $button-sm-shadow;
+    }
+  }
+  &.btn-success, 
+  &.btn-warning {
+    box-shadow: $button-sm-shadow;
+  }
+  &.btn-outline-primary {
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    background-color: $white;
+    transition: 0.1s all linear;
+    min-width: 90px;
+    height: 40px;
+    border-radius: 15px;
+    &:hover{
+      background-color: $primary-color;
+      color: $white;
+      box-shadow: $button-sm-shadow;
+    }
+    &.btn-sm{
+      min-width: 50px;
+      padding: 8px 12px;
+    }
+    &:active, &:focus, &.active{
+      box-shadow: none;
+      background-color: $primary-color;
+      color: $white;
+      box-shadow: $button-sm-shadow;
+    }
+  }
+  &.btn-secondary {
+    background-color: transparent;
+    border-color: $primary-color;
+    color: $primary-color;
+    min-width: 90px;
+    height: 40px;
+    border-radius: 15px;
+    &.btn-sm{
+      min-width: 50px;
+      padding: 8px 12px;
+    }
+    &:hover{
+      background-color: $primary-color;
+      color: $white;
+      outline: none;
+      box-shadow: $button-sm-shadow;
+    }
+    &:active, &.active{
+      box-shadow: none;
+      background-color: $primary-color;
+      color: $white;
+      box-shadow: $button-sm-shadow;
+    }
+  }
+  &.btn-default {
+    color: #3e4956;
+    background-color: #fff;
+    border-color: #e4e9ef;
+    padding: 8px;
+    border-radius: 4px;
+    &:hover{
+      background-color: #fff;
+      border-color: #c4cfdc;
+    }
+    &:focus, &:active{
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.13);
+    }
+  }
+  &.dropdown-toggle{
+    border-radius: 4px;
+    padding: 10px !important;
+  }
+  &.btn-transparent {
+    background-color: transparent;
+    padding: 0 5px;
+    &:focus, &:active {
+        box-shadow: none;
+        outline: none;
+    }
+    &.text-warning-hover:hover .kbc{
+      color: #fbad17;
+    }
+  }
+}
+

@@ -1,0 +1,121 @@
+.card-body{
+    .b-title{
+        font-size: 15px;
+        font-weight: $fw-b;
+    }
+    .b-subtitle {
+        font-size: 15px;
+    }
+}
+.list-title{
+    font-size: 12px;
+    margin-bottom: 12px;
+    font-weight: $fw-b;
+}
+.listing-card{
+    position: relative;
+    cursor: pointer;
+    
+    .quote-version{
+        position: absolute;
+        top: -1px;
+        right: 20px;
+        padding: 10px;
+        background-color: rgba(251, 173, 23, 0.2);
+        font-size: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        color: $dark-blue;
+        font-weight: $fw-sb;
+    }
+    .listing-footer{
+        a{
+          &:hover{
+              text-decoration: none;
+          }  
+        }
+        i{
+            font-size: 15px;
+        }
+        .drawn-by{
+            font-size: 11px;
+        }
+    }
+    .inner-content{
+        span{
+            font-size: 11px;
+        }
+        i{
+            margin-right: 8px;
+            font-size: 12px;
+        }
+    }
+}
+.course-listing{
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+    .col-md-4{
+        padding-right: 7px;
+        padding-left: 7px;
+    }
+    .listing-card{
+        .inner-content{
+            span{
+                font-size: 11px;
+            }
+            div{
+                font-size: 11px;
+            }
+        }
+    .inner-content.vsf-wrapper{
+        .vsf{
+            i{
+                font-size: 10px;
+                margin-right: 0px;
+            }
+        }
+    }
+       border-color: transparent;
+       box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+        margin-bottom: 13px;
+        cursor: default;
+        .head-text{
+            font-size: 13px;
+            white-space: nowrap; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 95%;
+        }
+        .dropdown.elipsis-dropdown {
+           position: relative;
+            .dropdown-menu{
+                .dropdown-item{
+                    font-size: 12px;
+                }
+            }
+        
+            .btn {
+            
+              min-height: auto;
+              line-height: normal;
+              font-size: 14px;
+              background-color: transparent;
+            //   background-color: #fff;
+            //   border-color: rgba($form-border, 0.4);
+            //   position: relative;
+            position: absolute;
+            right: -10px;
+            top: -18px;
+              .fa {
+                line-height: normal;
+              }
+            }
+
+          
+            .dropdown-toggle.dd-custom::after {
+               display: none;
+              
+            }
+        }
+    }
+}

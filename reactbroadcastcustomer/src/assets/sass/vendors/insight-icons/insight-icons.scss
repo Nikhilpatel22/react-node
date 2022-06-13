@@ -1,0 +1,92 @@
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?7k4442');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?7k4442#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?7k4442') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?7k4442') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?7k4442##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="insight-"], [class*=" insight-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.insight-broadcast {
+  &:before {
+    content: $insight-broadcast; 
+  }
+}
+.insight-cost-tracker {
+  &:before {
+    content: $insight-cost-tracker; 
+  }
+}
+.insight-reminder {
+  &:before {
+    content: $insight-reminder; 
+  }
+}
+.insight-vendor {
+  &:before {
+    content: $insight-vendor; 
+  }
+}
+.insight-calendar {
+  &:before {
+    content: $insight-calendar; 
+  }
+}
+.insight-chain {
+  &:before {
+    content: $insight-chain; 
+  }
+}
+.insight-contact {
+  &:before {
+    content: $insight-contact; 
+  }
+}
+.insight-chat {
+  &:before {
+    content: $insight-chat; 
+  }
+}
+.insight-dashboard {
+  &:before {
+    content: $insight-dashboard; 
+  }
+}
+.insight-enterprise {
+  &:before {
+    content: $insight-enterprise; 
+  }
+}
+.insight-management {
+  &:before {
+    content: $insight-management; 
+  }
+}
+.insight-change-password1 {
+  &:before {
+    content: $insight-change-password1; 
+  }
+}
+.insight-bookmark {
+  &:before {
+    content: $insight-bookmark; 
+  }
+}

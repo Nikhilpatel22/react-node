@@ -1,0 +1,54 @@
+.emp-listing{
+
+    .widget-profile{
+        position: relative;
+
+        .small-text{
+            font-size: 14px;
+            color: gray;
+        }
+
+        .profile-img{
+            // margin: o auto;
+            cursor: pointer;
+            height: 80px;
+            margin: 0 auto;
+            position: relative;
+            width: 80px;
+
+            img{
+                border-radius: 50%;
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                &:hover{
+                    box-shadow: $shadow;
+                }
+            }
+
+            
+        
+        }
+        .profile-action {
+            position: absolute;
+            right: 10px;
+            text-align: right;
+            top: 5px;
+
+            i{
+                color: #000;
+            }
+
+            .dropdown-menu-right{
+                a{
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .emp-name{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}

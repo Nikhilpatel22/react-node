@@ -1,0 +1,620 @@
+.form-group {
+    .asterisk {
+        color: #cb1334;
+      }
+    .bootstrap-select {
+        .btn {
+            box-shadow: $input-shadow;
+            &.btn-light {
+                background-color: #fff;
+                border: 1px solid $form-border;
+                color: $primary-text;
+            }
+        }
+        .dropdown-toggle:focus,
+        >select.mobile-device:focus+.dropdown-toggle {
+            outline: 0 none !important;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border-color: $primary-color;
+        }
+        .dropdown-item.active,
+        .dropdown-item:active {
+            background-color: $primary-color;
+        }
+        .dropdown-item {
+            line-height: 1.5;
+            padding: 8px 12px 6px;
+            font-size: .9rem;
+        }
+        &.form-control {
+            box-shadow: none;
+            height: auto;
+            padding: 0;
+        }
+    }
+}
+.form-devider{
+    padding: 10px 0;
+    border-top: 1px dashed $form-border;
+}
+.has-label-on-border{
+    .row{
+        margin-left: -7.5px;
+        margin-right: -7.5px;
+        >div[class*="col-"]{
+            padding-right: 7.5px;
+            padding-left: 7.5px;
+        }
+    }
+    .form-group{
+        position: relative;
+        margin-bottom: 25px;
+        &.mb-10{
+            margin-bottom: 10px;
+        }
+        &.fix-box{
+            .dropdown-toggle{
+            width: 180px;
+            }
+        }
+        label{
+            position:absolute;
+            top:-8px;
+            left:20px;
+            padding-left: 2px;
+            background-color:white;
+            font-size: 13px;
+            font-weight: 500;
+            z-index: 5;
+            &.left-56{
+                left: 56px;
+            }
+            &.input-group{
+                position: static;
+            }
+            &.c-radio-label, &.item-radio, &.file-input, &.item-checkbox{
+                position: relative;
+                left: 0;
+                top: 0;
+                margin-bottom: 0;
+            }
+            &.checkbox-container{
+                position: relative;
+                left: 0;
+                top: 0;
+                margin-bottom: 0;
+                padding-left: 30px;
+            }
+            &.c-label{
+                position: static;
+                background-color: transparent;
+                padding-left: 0;
+            }
+            &.ro {
+                background-color: transparent;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    background: white;
+                    height: 1px;
+                    top: 8px;
+                }
+                span {
+                    position: relative;
+                }
+            }
+            &.has-field-readonly{
+                background-color: #E9ECEF;
+                &::before{                
+                    content: '';
+                    height: 20px;
+                    width: calc(100% + 3px);
+                    background: #fff;
+                    display: block;
+                    position: absolute;
+                    top: -11px;
+                    left: -1px;
+                    z-index: -1;
+                }
+            }
+        }
+        &.radio-label {
+            label.c-label {
+                position: relative;
+                top: -8px;
+                left: 0;
+            }
+            .radio-group {
+                position: relative;
+                top: -10px;
+            }
+        }
+        .form-control{
+            height: 40px;
+            padding: 12px;
+            &::placeholder {
+                font-style:italic;
+            }
+            &.bootstrap-select{
+                padding: 0;
+                .dropdown-toggle{
+                    padding: 12px;
+                    background-color: $white;
+                    &:focus{
+                        outline: none !important;
+                    } 
+                }  
+            }
+        }
+        textarea.form-control {
+            height: 45px;
+            &.no-resize{
+                resize: none;
+            }
+        }
+        .disabledLabel {
+            &::before{
+                position: absolute;
+                height: 15px;
+                left: -2px;
+                width: 100%;
+                background: #E9ECEF;
+                content: "";
+                z-index: -1;
+                top: 8px;
+            }
+        }
+    }
+}
+.page-title {
+    font-size: 20px;
+}
+.card {
+    border-color: transparent;
+    box-shadow: 0px 4px 15px rgba(0 ,0 ,0 , 0.1);
+    .sub-head{
+        font-size: 16px;
+    }
+    margin-bottom: 25px;
+}
+.text-hint{
+    font-style: italic;
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: $fw-sb;
+}
+.sub-header {
+    align-items: center;
+    padding: 20px 0px;
+}
+textarea{
+    height: 45px;
+}
+textarea.noresize {
+    resize: none;
+}
+.sub-heading-text{
+    font-size: 13px;
+    margin-bottom: 9px;
+    margin-top: -8px;
+    color: rgb(131, 146, 165);
+    font-weight: 600;
+}
+.form-control {
+    border: 1px solid $form-border;
+    box-shadow: $input-shadow;
+    font-size: 13px;
+    &:focus {
+        border-color: $primary-color;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+.dateInputs{
+    cursor: pointer;
+}
+
+label{
+    font-size: 14px;
+    color: rgb(131, 146, 165);
+    margin-bottom: 0;
+}
+
+.item-checkbox {
+    display: block;
+    &.checkbox-inline {
+        padding-left: 0;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 20px;
+        vertical-align: middle;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    .check {
+        position: relative;
+        padding-left: 20px;
+        margin-right: 12px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        &.channels-check {
+            position: relative;
+            padding: 0px 0px 12px 15px;
+            display: block;
+            width: 100%;
+            border-bottom: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            .text {
+                font-weight: $n;
+            }
+            .fa-check-square {
+                color: #ccc;
+                font-size: 20px;
+                position: absolute;
+                top: 12px;
+                left: 0;
+                &.top-5 {
+                    top: 5px;
+                }
+                &.top-0 {
+                    top: 0;
+                }
+            }
+        }
+    }
+    &.no-lines .check {
+        border-bottom: 0;
+    }
+    .check {
+        .text {
+            font-weight: $fw-m;
+        }
+        .fa-square {
+            color: $gray;
+            font-size: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    input[type="checkbox"] {
+        position: absolute;
+    
+        opacity: 1;
+        z-index: -999;
+        left: 0px;
+        &:checked+.check .fa-square {
+            border: 0;
+            &::before {
+                content: "\f14a";
+                color: $primary-color !important; 
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+//custom radio
+.item-radio {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    &.mb-0 {
+        margin-bottom: 0;
+    }
+    &.radio-inline {
+        padding-left: 0;
+        display: inline-block;
+        +.radio-inline {
+            margin-left: 10px;
+        }
+    }
+    &.radio-block {
+        display: block;
+    }
+    input[type="radio"] {
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+        &:checked~.radio-content {
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 10px;
+                height: 10px;
+                background-color: $primary-color;
+                border-radius: 10px;
+                margin-left: -5px;
+                margin-top: -5px;
+            }
+            .fa-circle-o {
+                &:before {
+                    content: "\f111";
+                    color: $primary-color;
+                }
+            }
+        }
+      
+    }
+    .radio-content {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -10px;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        border: 2px solid $form-border;
+        border-radius: 20px;
+        background-color: $white;
+        display: block;
+        &:hover {
+            .text,
+            .fa {
+                color: $primary-color;
+            }
+        }
+        .fa {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            color: $form-border;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    }
+    .text {
+        padding-left: 30px;
+    }
+    &.mtb-10 {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        display: block;
+        font-weight: $n;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    box-shadow: 0 0 0 30px white inset !important;
+}
+
+//intl tel input
+.iti{
+    display: block;
+}
+.iti__flag{
+    // background-image: url('../../image/flags.png');
+}
+.iti__country-list{
+    z-index: 99;
+    font-size: 12px;
+    max-width: 250px;
+}
+.iti--separate-dial-code .iti__selected-dial-code {
+    font-size: 12px;
+}
+.iti--separate-dial-code .iti__selected-flag{
+    background-color: transparent ;
+}
+.iti__flag-container:hover .iti__selected-flag {
+    background-color:transparent !important;
+}
+
+//custom switch
+// switch
+.onoffswitch {
+    position: relative;
+    width: 72px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid $form-border;
+    border-radius: 50px;
+    margin-bottom: 0;
+    width: 60px;
+}
+
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 23px;
+    padding: 0;
+    line-height: 23px;
+    font-size: 12px;
+    color: $white;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "Yes";
+    padding-left: 10px;
+    background-color: $success;
+    color: $white;
+}
+.onoffswitch-inner:after {
+    content: "No";
+    padding-right: 10px;
+    background-color: $danger;
+    color: $white;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block;
+    width: 17px;
+    margin: 4.5px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 46px;
+    border: 1px solid $form-border;
+    border-radius: 50px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+    right: 11px;
+}
+
+
+.form-control, .form-control.bootstrap-select .btn {
+    height: 40px;
+}       
+
+//select2
+.select2-container--default .select2-results__option--selected{
+    background-color: #fff;
+}
+.select2-results__options{
+    border-color: $primary-color
+}
+.select2-results__option{
+    font-size: 12px;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
+    background-color: $primary-color;
+}
+.select2-container--default .select2-selection--multiple{
+    padding: 5px;
+    min-height: 40px;
+    border: 1px solid $form-border;
+    box-shadow: $input-shadow;
+    .select2-selection__choice{
+        background-color: $primary-color;
+        border-color: $primary-color;
+        // height: 20px;
+        display: inline-flex;
+        align-items: center;
+        padding-left: 15px;
+    }
+    .select2-selection__choice__remove{
+        border-right: 0;
+        padding: 1px 6px;
+        color: $white;
+        font-size: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        &:hover{
+            background-color: transparent;
+            color: $white;
+            opacity: 0.8;
+        }
+    }
+    .select2-selection__choice__display {
+        font-size: 12px;
+        color: $white;
+    }
+
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+    border-color: $primary-color;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.upload-wrapper{
+    display: flex;
+    padding: 9px 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed $primary-color;
+    margin-bottom: 20px;
+    cursor: pointer;
+    .image-holder{
+        width: 50px;
+        margin-right: 10px;
+        img{
+            width: 100%;
+        }
+    }
+    .upload-text{
+        font-size: 17px;
+        color: $primary-color;
+    }
+}
+
+
+// form input style for checkbox on screenshot page
+.round.insight-checkbox {
+    position: relative;
+    label {
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 16px;
+        left: -2px;
+        position: absolute;
+        top: 0px;
+        width: 16px;
+        &:after {
+            border: 2px solid #fff;
+            border-top: none;
+            border-right: none;
+            content: "";
+            height: 5px;
+            left: 2px;
+            opacity: 0;
+            position: absolute;
+            top: 3px;
+            transform: rotate(-45deg);
+            width: 10px;
+        }
+    }
+    input[type="checkbox"] {
+        visibility: hidden;
+    }   
+    input[type="checkbox"]:checked + label {
+        background-color: #2aa7ff;
+        border-color: #fff;
+    }
+    input[type="checkbox"]:checked + label:after {
+        opacity: 1;
+    }
+}
+
+.check-screenshot{
+    .round.card-checkbox{
+        left: 9px;
+        top: 9px;
+    }
+}

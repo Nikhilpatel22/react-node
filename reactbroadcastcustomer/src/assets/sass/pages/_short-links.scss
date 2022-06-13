@@ -1,0 +1,39 @@
+.table-border-none{
+    tr{
+        td{
+            border: none;
+        }
+
+        th{
+            border: none;
+        }
+    }
+
+    .odd{
+        background-color: #f5f6fa;
+    }
+
+    
+    thead{
+        th{
+            background-color: $white; 
+        }
+    }
+       
+    
+}
+
+.app-layout{
+    .dataTable{
+        label{
+            color:$black;
+
+            .form-control-sm{
+                display: inline-block;
+                width: 35px;
+                height: 30px;
+                appearance: none;
+            }
+        }
+    }
+}

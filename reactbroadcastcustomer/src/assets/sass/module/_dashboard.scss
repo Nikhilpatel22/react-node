@@ -1,0 +1,144 @@
+.dashboard-page{
+    .icon-circle{
+        background: #f5f7fb;
+        height: 60px;
+        width: 60px;
+        border-radius: 50px;
+        padding: 10px 12px;
+        border: 1px solid #e6e8ed;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #464a53;
+    }
+    .total-card{
+        .card{
+            min-height: 183px;
+        }
+        .media{
+            align-items: center;
+        }
+    }
+    .card{
+        position: relative;
+        &.color-pink{
+            background-color: #fe3965;
+        }
+        &.color-blue{
+            background-color: #01aaad;
+        }
+        &.color-blue2{
+            background-color: $primary-color;
+        }
+        &.pink-light{
+            background-color: #ff5bb2;
+        }
+        &.color-green{
+            background-color: #108c10;
+        }
+        &.color-orange{
+            background: #f5ae4a;
+        }
+        &.color-l-red{
+            background-color: #da8696;
+        }
+        &.color-navy{
+            background-color: #163c6b;
+        }
+        .top-branches{
+            span{
+                font-size: 14px;
+            }
+            .d-flex{
+                margin-bottom: 5px;
+            }
+        }
+        .progress {
+            background-color: rgba(255,255,255,.25)!important;
+            height: 6px;
+        }
+        .progress-animated {
+            animation-duration: 5s;
+            animation-name: myanimation;
+            transition: myanimation 5s ease 0s;
+        }
+        &.h-443{
+            min-height: 443px;
+        }
+        .see-more{
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            color: $white;
+            font-size: 12px;
+            i{
+                font-size: 15px;
+            }
+            &:hover{
+                opacity: 0.6;
+                text-decoration: none;
+            }
+        }
+        table{
+            margin-bottom: 0;
+        }
+    }
+    .card-big{
+        height: 390px;
+    }
+
+    //top facilitators
+    .executives-listing{
+        position: relative;
+        &::after{
+            content: '';
+            width: 1px;
+            height: 100%;
+            background-color: #f2f2f2;
+            position: absolute;
+            right: -16px;
+            top: 0;
+        }
+        &:last-child::after{
+            display: none;
+        }
+        .img-wrapper{
+            width: 45px;
+            img{
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+        .executive-name{
+            font-size: 16px;
+            font-weight: $fw-m;
+        }
+        .quote-count{
+            font-size: 14px;
+        }
+        .quote-value{
+            font-size: 14px;
+        }
+    }
+    .ratings{
+        i{
+            color: #F6C800;
+        }
+    }
+    //popular courses
+    .popular-cources{
+        .card{
+            background-color: rgba($primary-color, 0.1);
+            height: 130px;
+            box-shadow: none;
+            border-radius: 8px;
+            margin-bottom: 0;
+        }
+    }
+}
+@keyframes myanimation{
+    0%{
+        width:0
+    }
+}

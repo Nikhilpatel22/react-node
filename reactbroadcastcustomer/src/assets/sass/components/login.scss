@@ -1,0 +1,67 @@
+.auth-wrapper{
+    .image-holder{
+      max-width: 470px;
+      margin: auto;
+      img{
+        width: 100%;
+      }
+    }
+    .login-form-wrapper{
+      h1{
+        font-size: 35px;
+        font-weight: 700;
+        margin: 20px 0;
+        color: $primary-color;
+        .text-blue{
+          color: $primary-dark;
+        }
+        &.reset-title{
+          font-size: 28px;
+        }
+      }
+      .logo-wrapper{
+        width: 100%;
+        max-width: 170px;
+        img{
+          width: 100%;
+        }
+      }
+      .password-wrapper{
+        position: relative;
+        .form-control {
+          padding-right: 55px;
+        }
+        .togglePassword {
+          position: absolute;
+          right: 0px; 
+          width: 43px;
+          height: 43px;
+          border: 0;
+          top: 6px;
+          background-color: transparent;
+          color: $primary-color;
+          font-size: 17px;
+          i {
+            transition: 0.2s all linear;
+            color: inherit;
+          }
+          &:hover {
+            background-color: transparent;
+            color: $primary-dark;
+            i {
+              color: inherit;
+            }
+          }
+        }
+      }
+      .forgot-pass-link{
+        font-size: 13px;
+        color: $primary-dark;
+      }
+      .remeber-me{
+        font-size: 13px;
+        color: #414D55;
+      }
+    }
+  }
+  

@@ -1,0 +1,29 @@
+.page-url-activity{
+    .table{
+        .hidden-row{
+            padding: 0 !important;
+            td{
+                border-bottom: 0;
+            }
+        }
+        tr[data-toggle="collapse"]{
+            cursor: pointer;
+        }
+        tr.collapsed{
+            .fa-minus-circle:before {
+                content: "\f055";
+            }
+        }
+    }
+    .url-activity-details{
+        background-color: #fafafa;
+        padding: 15px;
+        .table{
+            margin-bottom: 0;
+        }
+        .table td, .table th {
+            background-color: #fafafa;
+            padding: 8px;
+        }
+    }
+}

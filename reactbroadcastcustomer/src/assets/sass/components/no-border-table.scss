@@ -1,0 +1,81 @@
+.dashboard-container-main{
+    .bottom-text{
+        font-size: 14px;
+    }
+    .table-container.no-border-cust-table{
+        table{
+// border: 1px solid rgb(241, 236, 236);
+td{
+    border:0;
+    vertical-align: middle;
+    .bg-cust-success{
+     background-color: rgba(0, 255, 0, 0.15);
+     padding: 5px;
+     min-width: 65px;
+     font-size: 95%;
+
+    
+
+    }
+    .bg-cust-warning{
+     background-color: rgba(255, 255, 0, 0.15);
+     padding: 5px;
+     min-width: 65px;
+     font-size: 95%;
+
+    }
+    .bg-cust-danger{
+     background-color: rgba(255, 0, 0, 0.1);
+     padding: 5px;
+     min-width: 65px;
+     font-size: 95%;
+     
+    }
+ }
+            th{
+                border:0;
+                background-color: white;
+             }
+          
+           
+
+        }
+    }
+}
+
+.app-layout{
+    position: relative;
+    .bottom-text-list{
+        font-size: 14px;
+        display: inline-block;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+    }
+   
+}
+
+.bg-cust-success{
+    background-color: rgba(0, 255, 0, 0.15);
+    padding: 5px;
+    min-width: 65px;
+    font-size: 95%;
+
+   
+
+   }
+   .bg-cust-warning{
+    background-color: rgba(255, 255, 0, 0.15);
+    padding: 5px;
+    min-width: 65px;
+    font-size: 95%;
+
+   }
+   .bg-cust-danger{
+    background-color: rgba(255, 0, 0, 0.1);
+    padding: 5px;
+    min-width: 65px;
+    font-size: 95%;
+    
+   }
+

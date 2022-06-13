@@ -1,0 +1,30 @@
+
+@media only screen and (max-width:789px){
+    .profile-container {
+        // position: absolute;
+        // width: 100%;
+
+        .user-avatar{
+            .avaTar{
+                // margin-right: 10px;
+                .status-on{
+                    position: absolute;
+                    right: 13px;
+                }
+            }
+            .user-text{
+                display: none;
+            }
+        }
+
+        .top-nav-search{
+            .search-form{
+                display: none;
+            }
+            .resp-search{
+                display: block;
+            }
+        }
+    }
+
+}

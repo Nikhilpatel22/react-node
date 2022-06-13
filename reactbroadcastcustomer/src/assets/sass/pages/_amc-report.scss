@@ -1,0 +1,119 @@
+.amc-report-main{
+    .content{
+        .btn.o-btn-secondary {
+            background-color: #fff;
+            color: #181E27;
+            border: 1px solid #ffde00;
+        }
+        
+    }
+
+    .half-card{
+        .drop-down-box{
+            label{
+                display: inline-block;
+                max-width: 100%;
+                margin-bottom: 5px;
+                font-weight: 700;
+                color: #000;
+                font-size: 20px;
+            }
+
+            .date-picker-side{
+                .date-box-repot{
+                    position: relative;
+                }
+
+                .date-calender-app{
+                    position: absolute;
+                    right: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    text-decoration: none;
+                    z-index: 3;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .custom-stripped-table{
+            table{
+                tr{
+                    th{
+                        background-color: #000;
+                        color: #fff;
+                    }
+                    td{
+                        background-color: #fff;
+                    }
+                }
+            }
+
+            
+        }
+
+        .create-btn{
+            .open-filter{
+                background-color: #ffde00;
+                color: #000;
+                min-width: 90px;
+                height: 40px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.app-layout-wrapper{
+    .report-div{
+        .openReport{
+            .i-frame-layout{
+                overflow:auto ;
+                // overflow-y: auto;
+            }
+        }
+    }
+}
+
+
+.app-layout{
+    .timeline{
+        position: relative;
+        padding-left: 8px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 29px;
+            left: 9px;
+            height: 100%;
+            width: 2px;
+            background: #e4e9ef;
+        }
+       .cmnt-box{
+        position: relative;
+        padding: 10px;
+        // border-left: 2px solid grey;
+        padding-left: 20px;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            // right: -12px;
+            background-color: #414d55;
+            left: -7px;
+            top: 32px;
+            // border: 4px solid #fff;
+            // top: 15px;
+            // box-shadow: 0px 4px 4px rgb(0 0 0 / 5%);
+            border-radius: 50%;
+            // z-index: 1;
+        }
+
+        p{
+            font-size: 14px;
+        }
+
+       }
+    }
+}

@@ -1,0 +1,436 @@
+.screenshot-tab-row{
+    width: 100%;
+    nav{
+        width: 100%;
+        .screenshot-tabs{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0;
+            a{
+                width: 200px;
+                border-radius: 15px;
+                text-align: center;
+            }
+        }
+        
+    }
+    
+}
+.ist-dropbtn button.btn.btn-secondary{
+    background-color: none;
+    border-radius: 0;
+    border:none;
+    color: #495057;
+    &:hover, &:active, &:focus-visible, &:focus-within, &:focus, &:target, &:visited{
+        background-color: transparent;
+        color: #495057;
+        border-radius: 0;
+        border:0;
+        border-color: 0;
+        box-shadow: none;
+    }
+}
+
+.screenshot-tab-content{
+    .tab-pane{
+        .how-activity-work-sec{
+            .card.activity-insight-card{
+                box-shadow: none;
+                border: 1px solid #e4e9ef;
+                border-radius: 6px;
+                .card-section-activity-in{
+                    padding: 15px 20px;
+                    .card-sec-border{
+                        border-right: 1px solid #e4e9ef;
+                    }
+                }
+            }
+        }
+
+        .screenshot-area-detail{
+            .timeline-column{
+                /* The actual timeline (the vertical ruler) */
+                // .timeline {
+                //     position: relative;
+                //     //max-width: 1200px;
+                //     margin: 0 auto;
+                // }
+                
+                // /* The actual timeline (the vertical ruler) */
+                // .timeline::after {
+                //     content: '';
+                //     position: absolute;
+                //     width: 6px;
+                //     background-color: white;
+                //     top: 0;
+                //     bottom: 0;
+                //     left: 50%;
+                //     margin-left: -3px;
+                // }
+                
+                // /* Container around content */
+                // .timeline-container {
+                //     padding: 10px 40px;
+                //     position: relative;
+                //     background-color: inherit;
+                //     width: 100%;
+                // }
+                
+                // /* The circles on the timeline */
+                // .timeline-container::after {
+                //     content: '';
+                //     position: absolute;
+                //     width: 25px;
+                //     height: 25px;
+                //     right: -17px;
+                //     background-color: white;
+                //     border: 4px solid #FF9F55;
+                //     top: 15px;
+                //     border-radius: 50%;
+                //     z-index: 1;
+                // }
+                
+            
+                // /* Place the container to the right */
+                // .right {
+                //     left: 0;
+                // }
+            
+                
+                // /* Add arrows to the right container (pointing left) */
+                // .right::before {
+                //     content: " ";
+                //     height: 0;
+                //     position: absolute;
+                //     top: 22px;
+                //     width: 0;
+                //     z-index: 1;
+                //     left: 30px;
+                //     border: medium solid white;
+                //     border-width: 10px 10px 10px 0;
+                //     border-color: transparent white transparent transparent;
+                // }
+                
+                // /* Fix the circle for containers on the right side */
+                // .right::after {
+                //     left: 0px;
+                // }
+                
+                // /* The actual content */
+                // .content {
+                //     padding: 20px 30px;
+                //     background-color: white;
+                //     position: relative;
+                //     border-radius: 6px;
+                // }
+                
+                /* Media queries - Responsive timeline on screens less than 600px wide */
+                //   @media screen and (max-width: 600px) {
+                //     /* Place the timelime to the left */
+                //     .timeline::after {
+                //     left: 31px;
+                //     }
+                    
+                //     /* Full-width containers */
+                //     .container {
+                //     width: 100%;
+                //     padding-left: 70px;
+                //     padding-right: 25px;
+                //     }
+                    
+                //     /* Make sure that all arrows are pointing leftwards */
+                //     .container::before {
+                //     left: 60px;
+                //     border: medium solid white;
+                //     border-width: 10px 10px 10px 0;
+                //     border-color: transparent white transparent transparent;
+                //     }
+                
+                //     /* Make sure all circles are at the same spot */
+                //     .left::after, .right::after {
+                //     left: 15px;
+                //     }
+                    
+                //     /* Make all right containers behave like the left ones */
+                //     .right {
+                //     left: 0%;
+                //     }
+                //   }
+                
+
+                .screenshot-checkboxes{
+                    width: calc(100% - 100px);
+                    .screenshot-card{
+                        padding: 15px;
+                        .card{
+                            img{
+                                width: 100%;
+                                height: 150px;
+                                object-fit: cover;
+                            }
+                            .overlay {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 150px;
+                                background:#333;
+                                opacity: 0;
+                                .check-screenshot{
+                                     .trash-box{
+                                         .fa-trash-can{
+                                             position: absolute;
+                                             right: 23px;
+                                             top: 10px;
+                                         }
+                                     }                                  
+                                }
+                                .view-more-screens{
+                                    margin-top: 20px;
+                                    button{
+                                        height: 30px;
+                                        padding: 5px;
+                                        font-size: 12px;
+                                        text-align: center;
+                                    }
+                                }
+                              }
+                              
+                              .overlay:hover {
+                                opacity: .8;
+                              }
+                            .card-body{
+                                position: relative;
+                                .no-of-screens{
+                                    background: #fff;
+                                    border-radius: 20px;
+                                    //box-shadow: 0 2px 4px rgb(0 0 0 / 19%);
+                                    color: #2aa7ff;
+                                    font-size: 12px;
+                                    font-weight: bold;
+                                    left: 32%;
+                                    top: -10px;
+                                    //margin: -18px auto 0;
+                                    padding: 8px 12px;
+                                    pointer-events: none;
+                                    position: absolute;
+                                    right: 0;
+                                    height: 40px;
+                                    width: 100px;
+                                    text-align: center;
+                                    z-index: 1;
+                                }
+                                .card-title-row{
+                                    margin-top: 10px;
+                                    .time-interval-title{
+                                        text-align: left;
+                                        font-size: 12px;
+                                        color: #3e4956;
+                                    }
+                                    .edit-screenshot{
+                                        color: #0081dd;
+                                        font-size: 14px;
+                                    }
+                                }
+                                .activity-insight-progress{
+                                    .progress{
+                                        width: 100%;
+                                        height: 4px;
+                                        box-shadow: none;
+                                        background-color: #ecf0f4;
+                                        min-width: 100px;
+    
+                                    }
+    
+                                }
+                                .activity-insight-desc{
+                                    width: 100%;
+                                    p{
+                                        text-align: center;
+                                    font-size: 12px;
+                                    color: #3e4956;
+                                    }
+                                   
+                                    
+                                }
+                            }
+                        }
+                    }
+    
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+
+.timeline {
+    overflow: hidden;
+    //padding: 15px;
+    //color: #fff;
+    //background-color: #333;
+    .timeline-container {
+        position: relative;
+        padding: 15px;
+        width: 100%;
+      
+        &::before { // this is the timeline vertical line
+          content: '';
+          position: absolute;
+          top: 29px;
+          left: 21px;
+          height: 100%;
+          width: 2px;
+          background:  #e4e9ef;
+        }
+      
+        // @include breakpoint(md) {
+        //   &::before {
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //   }
+      
+        // }
+      }
+      .timeline-checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 2px solid  #e4e9ef;
+        //box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(#000, 0.08), 0 3px 0 4px rgba(#000, 0.05);
+      
+        // img {
+        //   width: 24px;
+        //   height: 24px;
+        // }
+      
+        // @include breakpoint(md) {
+        //   width: 60px;
+        //   height: 60px;
+        //   order: 1; // flex order -> place the image after cd-timeline__content
+        //   margin-left: calc(5% - 30px);
+        //   will-change: transform;
+      
+        //   .cd-timeline__block:nth-child(even) & {
+        //     margin-right: calc(5% - 30px);
+        //   }
+        // }
+      }
+  }
+  
+  
+  
+  .timeline-block {
+    display: flex;
+    position: relative;
+    z-index: 1; // make sure content is above the timeline vertical line
+    margin-bottom:10px;
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
+  
+    // @include breakpoint(md) {
+    //   &:nth-child(even) {
+    //     flex-direction: row-reverse; // for even blocks -> lay out content from right to left
+    //   }
+    // }
+  }
+  
+  
+  
+//   .cd-timeline__img--picture {
+//     background-color: blue;
+//   }
+  
+//   .cd-timeline__img--movie {
+//     background-color: blue;
+//   }
+  
+//   .cd-timeline__img--location {
+//     background-color: blue;
+//   }
+  
+  .timeline-content {
+    flex-grow: 1; // expand element so that it takes up all the available space inside its parent
+    position: relative;
+    margin-left: 0;
+    background:#fff;
+    border-radius: 50%;
+    padding:15px;
+    //box-shadow: 0 3px 0 var(--cd-color-2); 
+  
+    // &::before { // triangle next to content block
+    //   content: '';
+    //   position: absolute;
+    //   top: 16px;
+    //   right: 100%;
+    //   //@include triangle(left, 7px, var(--color-white));
+    // }
+  
+    // h2 {
+    //   color: var(--cd-color-1);
+    // }
+  
+    // @include breakpoint(md) {
+    //   width: 45%;
+    //   flex-grow: 0; // prevent element from growing inside its parent
+    //   will-change: transform;
+    //   margin: 0;
+    //   font-size: 0.8em;
+    //   --line-height-multiplier: 1.2;
+  
+    //   &::before { // triangle
+    //     top: 24px;
+    //   }
+  
+    //   .cd-timeline__block:nth-child(odd) &::before { // change triangle direction
+    //     right: auto;
+    //     left: 100%;
+    //     @include triangle(right, 7px, var(--color-white)); 
+    //   }
+    // }
+  }
+  
+//   .cd-timeline__date {
+//     color: alpha(var(--cd-color-3), 0.7);
+  
+//     @include breakpoint(md) {
+//       position: absolute;
+//       width: 100%;
+//       left: 120%;
+//       top: 20px;
+  
+//       .cd-timeline__block:nth-child(even) & {
+//         left: auto;
+//         right: 120%;
+//         text-align: right;
+//       }
+//     }
+  
+  
+//   @include breakpoint(md) { // animations
+//     .cd-timeline__img--hidden, .cd-timeline__content--hidden {
+//       visibility: hidden;
+//     }
+  
+//     .cd-timeline__img--bounce-in {
+//       animation: cd-bounce-1 0.6s;
+//     }
+  
+//     .cd-timeline__content--bounce-in {
+//       animation: cd-bounce-2 0.6s;       
+//     }
+  
+//     .cd-timeline__block:nth-child(even) .cd-timeline__content--bounce-in {
+//       animation-name: cd-bounce-2-inverse; 
+//     }
+//   }

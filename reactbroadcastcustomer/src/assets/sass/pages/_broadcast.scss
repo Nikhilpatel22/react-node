@@ -1,0 +1,182 @@
+.page-broadcast{
+    .has-status-sent{
+        button{
+            display: none;
+        }
+    }
+    .social-img-wrapper{
+        img{
+            width: 30px;
+            margin-bottom: 10px;
+        }
+    }
+    .platform-wrapper{
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        cursor: pointer;
+        input[type=checkbox], input[type=radio]{
+            display: none;
+        }
+        .card-content{
+            padding: 9px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            border: 1px solid $form-border;
+        }
+        .check-icon{
+            display: none;
+            position: absolute;
+            top: -9px;
+            right: -5px;
+            font-size: 14px;
+            color: $primary-color;
+            span{
+                box-shadow: 0 0 0 4px rgba(48,86,213, 0.2);
+                border-radius: 50%;
+            }
+        }
+        .card-text{
+            margin-left: 7px;
+            font-size: 14px;
+        }
+        .social-image{
+            width: 25px;
+        }
+        .template-images{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    input[type=checkbox]:checked ~.card-content, input[type=radio]:checked ~.card-content{
+        border-color: $primary-color;
+        background-color: rgba($primary-color, 0.2);
+        color: rgba($black, 0.8);
+        border-style: dashed;
+        .check-icon{
+            display: block;
+        }
+    }
+  
+
+}
+.broadcastDataTable{
+    .dataTables_paginate {
+        float: right;
+    }
+    
+}
+.broadcast{
+    .broadcast_select {
+        .form-control{
+            padding: 0;
+        }
+    }
+    .css-rp2eg-InputComponent {
+        margin-left: 10px;
+    }
+   .addbroadcast_type{
+        border: 1px solid #c0ccda;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 5%);
+        font-size: 13px;
+        border-radius: 0.25rem;
+        height: 40px;
+            span{
+                line-height: 1.5;
+                padding: 8px 12px 6px;
+                font-size: .9rem;
+                color: #222222;
+            }
+            .react-dropdown-select-item-selected {
+                background: #0088CB;
+                color: $white;
+            }
+    } 
+ 
+    .addbroadcast_type:focus, .addbroadcast_type:focus-within {
+        outline: 0;
+        box-shadow: none !important;
+         border-color: #0088CB !important;
+    }  
+    .addbroadcast_type:hover{
+        border-color: #c0ccda; 
+    }
+    
+
+    input.react-dropdown-select-input {
+        line-height: 1.5;
+       font-size: .9rem;
+    }
+    .addbroadcast_option{
+         border: 1px solid #c0ccda;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 5%);
+        font-size: 13px;
+        border-radius: 0.25rem;
+        padding: 8px;
+        span {
+            background: none;
+            color: black;
+            font-size: 14px;
+        }
+        span:active {
+            background-color: #0088CB;
+            color: $white;
+        }
+    }
+    .addbroadcast_option:focus, .addbroadcast_option:focus-within {
+        outline: 0;
+        box-shadow: none !important;
+        border-color: #0088CB !important;
+    }  
+    .addbroadcast_option:hover{
+        border-color: #c0ccda; 
+    }
+    
+    .MuiOutlinedInput-notchedOutline {
+        border: none;
+    }
+    
+    .MuiFormControl-root.MuiTextField-root {
+        width: 100% !important;
+        border: 1px solid #c0ccda !important;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 5%) !important;
+        border-radius: 0.25rem !important;
+    }
+    .MuiInputBase-input{
+        padding: 9px;
+        line-height: 1.5;
+        height: auto;
+        color: #495057;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .MuiOutlinedInput-root{
+        font-family: inherit;     
+        
+    }
+    
+    .broadcast_date:hover{
+        border-color: #0088CB !important;
+    }
+}
+
+// Broadcast delete
+.broadcast_delete{
+    button.delete_btn {
+        border-radius: 4px !important;
+     }
+ 
+     .modal-header {
+         border-bottom: none;
+         padding-bottom: 0px;
+     }
+     .modal-footer {
+         border-top: 0;
+     }
+}
+
+.modal-backdrop.show {
+    opacity: 0.2 ;
+}

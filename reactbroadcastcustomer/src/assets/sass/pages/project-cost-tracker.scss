@@ -1,0 +1,46 @@
+.app-layout.cost-layout{
+    td{
+    .bg-inverse-success,.bg-inverse-danger,.bg-inverse-warning {
+        font-size: 100%;
+        font-weight: 700;
+    }
+    .badge{
+        padding: 1px 0px 1px 0px;
+        min-width: 60px;
+    }
+  }
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.org-text{
+    color: $blue;
+}
+
+thead{
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.dataTables_length select {
+    width: auto;
+    display: inline-block;
+}
+.row{
+    padding-bottom: 10px;
+}
+.bg-inverse-success {
+    background-color: rgba(15,183,107,.12)!important;
+    color: #26af48!important;
+}
+.bg-inverse-danger{
+    background-color: rgba(216, 75, 56, 0.12)!important;
+    color: #b92c2c!important;
+}
+.bg-inverse-warning{
+    background-color: rgba(216, 200, 53, 0.12)!important;
+    color: #f0d911!important;
+}
